@@ -18,3 +18,4 @@ For more information on the installation https://jupyter.org/install
 1. [Classes and functions](./Chapter_12_Classes_en_functions.ipynb)
 1. [Installing third-party packages](./Chapter_13_Installing_third-party_packages.ipynb)
 1. [Importing modules](./Chapter_14_Importing_modules.ipynb)
+1. [Structural Pattern Matching](./Chapter_15_Structural_pattern_matching.ipynb)
