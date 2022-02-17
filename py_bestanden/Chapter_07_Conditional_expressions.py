@@ -2,18 +2,18 @@
 # coding: utf-8
 
 # # Conditional expressions
-# _flow control_ statements.
-# `if`
-# `elif`
-# `else`
+# _flow control_ statements.  
+# `if`  
+# `elif`  
+# `else`  
+# 
+# Een `if` statement begint altijd met `if`.    
+# Kan meerdere `elif` bevatten.  
+# En eindigt met een `else` als dit nodig is.  
 
-# Een `if` statement begint altijd met `if`.
-# Kan meerdere `elif` bevatten.
-# En eindigt met een `else` als dit nodig is.
 
-
-# Een `if` statement maakt een splitsing in de code.
-# De code komt in het `if` _code block_ als de expressie waar is.
+# Een `if` statement maakt een splitsing in de code.  
+# De code komt in het `if` code block als de expressie waar is.
 
 num = 5
 
@@ -26,7 +26,7 @@ if 0 <= num < 10:
 print(num)
 
 
-# De code komt in een `else` _code block_ als de expressie(s) ervoor een `False` zijn.
+# De code komt in een `else` code block als de expressie(s) ervoor een `False` zijn.
 
 num = 15
 
@@ -41,10 +41,10 @@ else:
 print(num)
 
 
-# Met een `if elif` statement kan er meerdere expressies
-# De statements worden van `if`, `elif` naar `else` gevolgd.
-# Dus als een `if` of `elif` expressie waar is worden andere `elif` statements niet meer gechecked.
-# Weredom, als alles een `False` is komt de code in het `else` _code block_.
+# Met een `if elif` statement kan er meerdere expressies gemaakt worden.  
+# De statements worden van `if`, `elif` naar `else` gevolgd.  
+# Dus als een `if` of `elif` expressie waar is worden andere `elif` statements niet meer gechecked.  
+# Weredom, als alles een `False` is komt de code in het `else` _code block_.  
 
 num = 25
 
@@ -63,26 +63,25 @@ elif num >= 10:
 # num is negatief.
 else:
     print(f'num is negatief: {num}')
-
+    
 print(num)
 
 
 # ### Oefeningen Conditional expressions
 
-# Maak een `if` `else` blok wat checkt of het `dag` variable een dag bevat dat in het weekend valt.
-# Zodra de `dag` in het weekend valt zet de `is_weekend` variable op `True`, zo niet dan `False`.
-
-# Vul hieronder de code aan.
+# Maak een `if` `else` blok wat checkt of het `dag` variable een dag bevat dat in het weekend valt.  
+# Zodra de `dag` in het weekend valt zet de `is_weekend` variable op `True`, zo niet dan `False`.  
+# 
+# Vul hieronder de code aan.  
 
 is_weekend = None  # bool
 dag = "maandag"  # verander dit naar een andere dag
 
-# Verwijder dit blok commentaar
+# Verwijder dit blok commentaar 
 #   en maak hier logica dat bepaald of de `dag` in het weekend valt.
-
-if ... :
-    ...
-else:
-    ...
+# 
+# if
+# 
+# else 
 
 print(is_weekend)
