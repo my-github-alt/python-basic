@@ -25,23 +25,23 @@ print([_ for _ in dir(list) if not _.startswith('_')])
 
 lijst_1 = [1, 2, 3]
 lijst_1.append(4)   # voeg 4 toe aan lijst_1
-lijst_1
+print(lijst_1)
 
 lijst_2 = ['a', 'b', 'c', 'a']
 index_a = lijst_2.index('a')  # krijg de eerste index van 'a'
-index_a
+print(index_a)
 
 # haal het object op index 0 uit de lijst_2
 pop_0 = lijst_2.pop(0)
 print(f'{pop_0!r} is ge-popped uit lijst_2')
-lijst_2
+print(lijst_2)
 
 lijst_3 = [9, 8.0, '7']
 lijst_1.extend(lijst_3)   # voeg alle objecten van lijst_2 toe aan lijst_1
-lijst_1
+print(lijst_1)
 
 lijst_1[0] = 1_000  # overschrijf het eerste object in de lijst_1 [0]
-lijst_1
+print(lijst_1)
 
 # `append` en `extend` geven geen nieuwe lijst terug, deze functies passen alleen de lijst aan.  
 # Soms is het wenselijk om lijsten te combineren en een nieuwe lijst te creëren.  
@@ -50,7 +50,7 @@ lijst_1
 list_a = ['a']
 list_b = list('b')
 list_abc = list_a + list_b + ['c']
-list_abc
+print(list_abc)
 
 
 # ## Tuple
@@ -67,15 +67,15 @@ print([_ for _ in dir(tuple) if not _.startswith('_')])
 tuple_1 = (1, 2, 3)
 tuple_2 = ('a', 'b', 'c')
 tuple_3 = tuple_2 + tuple_1 + tuple_2   # voeg verschillende tuples aan elkaar toe om een nieuwe tuple te maken
-tuple_3
+print(tuple_3)
 
 # vraag op waar de eerste 2 staat in de tuple
 index_2 = tuple_1.index(2)
-index_2
+print(index_2)
 
 # hoe vaak komt 'a' in de tuple voor
 amount_a = tuple_3.count('a') 
-amount_a
+print(amount_a)
 
 # hash van een tuple
 print(hash((1, 2, 3)))
@@ -97,18 +97,18 @@ print([_ for _ in dir(set) if not _.startswith('_')])
 
 lijst = [3, 2, 1, 'a', 'c', 'b']
 set_1 = set(lijst)  # convert lijst naar set
-set_1
+print(set_1)
 
 set_2 = {1, 2, 3}   # maak een set 
 diff_set_1 = set_1.difference(set_2)  # verschil van set_1 en set_2
-diff_set_1
+print(diff_set_1)
 
 set_2.add(2)
-set_2
+print(set_2)
 
 set_3 = {5, 1, 4, 2, '3', 6}   # maak een set 
 set_2.update(set_3)
-set_2
+print(set_2)
 
 # `update` geeft geen nieuwe set terug.  
 # Soms is het wenselijk om twee set's bij elkaar toe te voegen en een nieuwe aan te maken.  
@@ -117,7 +117,7 @@ set_2
 set_a = {'a'}
 set_b = set('ab')
 set_abc = set_a | set_b | set('c')
-set_abc
+print(set_abc)
 
 # ## Dict
 # `dict` is een mutable data container die immutable data gebruikt om naar mutable of immutable data te verwijzen.  
@@ -142,17 +142,17 @@ print([_ for _ in dir(dict) if not _.startswith('_')])
 
 dict_1 = {'key1': 'value1', 2: 'two'}  # maak een dict aan
 dict_1[3] = 'three'  # voeg key  3  met value 'three'  toe aan de dict
-dict_1
+print(dict_1)
 
 value = dict_1.get(4)  # vraag 4 op die niet in de dict bestaat
-repr(value)  # `repr`esent de waarde
+print(value)  # None
 
 dict_2 = {'key1': 'value from dict_2'}
 dict_1.update(dict_2)  # overschrijf de value van een bestaande `key1` met update
-dict_1
+print(dict_1)
 
 dict_1[2] = 'TWO'  # overschrijf met subscription 
-dict_1
+print(dict_1)
 
 # Soms is het wenselijk om twee dicts's bij elkaar toe te voegen en een nieuwe aan te maken.  
 # Dit kan met een `|` (union operator)
@@ -160,7 +160,7 @@ dict_1
 dict_a = {'a': 'A'}
 dict_b = dict(b='B')
 dict_abc = dict_a | dict_b | {'c': 'C'}  # mogenlijk sinds Python3.9
-dict_abc
+print(dict_abc)
 
 
 # ### Oefeningen Data containers
