@@ -17,7 +17,7 @@
 # ...  
 # Elke lege data container is een `False` boolean value.  
 
-bool("")
+print(bool(""))
 
 # Python heeft naast `True` en `False` ook `None`.  
 # `None` geeft aan dat een waarde er (nog) niet is, het is een placeholder.  
@@ -25,11 +25,11 @@ bool("")
 # Omdat `None` een lege plek voorsteld is de boolean waarde van `None` altijd `False`.  
 
 een_variable = None  # `een_variable` kan later in het script een andere waarde krijgen.  
-bool(een_variable)
+print(bool(een_variable))
 
 # append geeft geen nieuwe lijst terug, maar een `None`
 dit_is_none = list().append(1)
-repr(dit_is_none)
+print(dit_is_none)
 
 # ###  Oefeningen Boolean values
 
