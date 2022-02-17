@@ -13,29 +13,29 @@
 
 een = 1
 twee = 2
-een + twee
+print(een + twee)
 
 
 # De functie `int` kan objecten dat een getal representeert omzetten naar een integer getal
 
 # +100 is een string
 positief = "+100"
-int(positief)
+print(int(positief))
 
 # -200 is een string
 negatief = "-200"
-int(negatief)
+print(int(negatief))
 
 
 # `int` kan gebruikt worden om hexadecimaal of _base2_ getallen omzetten naar een decimaal getal
 
 # omzetten binair getal naar decimaal
 binair = '110'
-int(binair, 2)
+print(int(binair, 2))
 
 # omzetten hexadecimaal getal naar decimaal
 hexadecimaal = '1A'
-int(hexadecimaal, 16)
+print(int(hexadecimaal, 16))
 
 
 # ## Float
@@ -54,22 +54,22 @@ int(hexadecimaal, 16)
 
 # '-200' is een string
 negatief = "-200"
-float(negatief)
+print(float(negatief))
 
 # '+100' is een string
 positief = "+100"
-float(positief)
+print(float(positief))
 
 # wetenschappelijke notatie van 0.00001
 wetenschappelijke_notatie = "1e-05"
-float(wetenschappelijke_notatie)
+print(float(wetenschappelijke_notatie))
 
 # een int naar float  plus  een wetenschappelijke notatie als float
-float(10_000) + float(wetenschappelijke_notatie)
+print(float(10_000) + float(wetenschappelijke_notatie))
 
 # `int` en `float` kan samen gebruikt worden in sommen
 
-0.618033 + 1
+print(0.618033 + 1)
 
 
 # ## Str
@@ -81,7 +81,7 @@ float(10_000) + float(wetenschappelijke_notatie)
 # Omdat een `str` dus unicode characters zijn kan het ook emoji's bevatten. 
 
 emoji_str = "\N{BLACK SUN WITH RAYS} zon en bloem ⚘"
-emoji_str
+print(emoji_str)
 
 # Zoals er bij `int` is laten zien kan een `str`  object worden omgezet naar `int`  
 # Vrijwel alles in Python kan omgezet worden naar `str`  
@@ -92,7 +92,7 @@ emoji_str
 
 one_million = 1_000_000
 str_million = str(one_million)
-f'{str_million} of type str: {isinstance(str_million, str)}'
+print(f'{str_million} of type str: {isinstance(str_million, str)}')
 
 
 # ### Oefeningen Basic types
