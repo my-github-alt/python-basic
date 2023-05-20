@@ -8,11 +8,12 @@ Vereisten
 
 Installatie van Python
 --
-- [Download de laatste Python](https://www.python.org/downloads/). Op het moment van schrijven is dat versie 3.10. 
-- 32-bits Python is aanbevolen.
+- [Download de laatste Python](https://www.python.org/downloads/). 
+- 64-bits Python is aanbevolen.
 - Installeer Python op je computer met het gedownloade installatiebestand.  
 - Tijdens de installatie: Geef de checkbox 'Add Python to Path' een check ☑ 
-- Check of Python geinstalleerd is door een Command-Prompt te openen en `python --version` te typen. Je moet dan een versie van Python zien. Bijvoorbeeld: `Python 3.10.4`
+- Check of Python geinstalleerd is door een Command-Prompt te openen en `python --version` te typen.  
+Je moet dan een versie van Python zien bijvoorbeeld: `Python 3.11.3`
 
 Installatie van Pycharm
 --
@@ -20,7 +21,8 @@ Installatie van Pycharm
 - Installeer Pycharm.  
 - Start het programma (er hoeft geen extra plugins gedownloaded te worden).  
 - Bekijk en volg de instructies op deze pagina: [Pycharm create and run your first project](https://www.jetbrains.com/help/pycharm/creating-and-running-your-first-python-project.html)
-- Het geeft verder niet waar en of je dit opslaat. Het gaat erom dat je een "Hello World" in Python kan maken zodat je weet of je technisch OKE bent om verder te gaan. 
+- Het geeft verder niet waar en of je dit opslaat.  
+Het gaat erom dat je een "Hello World" in Python kan maken zodat je weet of je technisch OKE bent om verder te gaan. 
 
 Voor Code versiebeheer kun je kiezen: A of B!
 -
@@ -72,3 +74,4 @@ Inhoud
 1. [Installing third-party packages](./Chapter_13_Installing_third-party_packages.ipynb)
 1. [Importing modules](./Chapter_14_Importing_modules.ipynb)
 1. [Structural Pattern Matching](./Chapter_15_Structural_pattern_matching.ipynb)
+1. [API testing met Python](./Chapter_16_API_testing_met_Python.ipynb)

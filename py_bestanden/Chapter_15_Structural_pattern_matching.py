@@ -28,7 +28,7 @@ match fruit.lower():  # maak alle letters lower-case
         kleur = 'Rood'
     case 'peer':
         kleur = 'Groen'
-    case 'banaan':./
+    case 'banaan':
          kleur = 'Geel'
     case _:  # else
         kleur = 'niet bekend'

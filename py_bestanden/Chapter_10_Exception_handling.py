@@ -79,6 +79,6 @@ finally:
 # ### Oefeningen Exception handling
 # 
 # Maak een try-except met een `assert` statement die een error geeft.  
-# Laat de `assert` falen en vang de error op.  
-# print deze error uit in het `finally` blok van de try-except.   
+# Laat de `assert` falen en print de error.
+# print 'finally' in het `finally` block
 
