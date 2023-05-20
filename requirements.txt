@@ -12,8 +12,9 @@ jupyterlab
 
 
 # Test framework
-pytest
-pytest-tags
+pytest==7.3.1
+pytest-tagging==1.3.0
+
 
 # Pytest welke te gebruiken is in JupyterLab
-ipytest
+ipytest==0.13.3

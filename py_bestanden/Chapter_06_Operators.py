@@ -16,28 +16,30 @@
 # `<=` kleiner of gelijk aan.
 # `!=` niet gelijk aan.
 
-print(1 < 2)   # 1 is kleiner dan 2
+boolean = 1 < 2   # 1 is kleiner dan 2
+print(boolean)
 
+boolean = 2 > 1   # 2 is groter dan 1
+print(boolean)
 
-print(2 > 1)   # 2 is groter dan 1
+boolean = 3 == 3   # 3 is gelijk aan 3
+print(boolean)
 
+boolean = 4 >= 4   # 4 is groter of gelijk aan 4
+print(boolean)
 
-print(3 == 3)   # 3 is gelijk aan 3
+boolean = 5 <= 6   # 5 is kleiner of gelijk aan 6
+print(boolean)
 
-
-print(4 >= 4)   # 4 is groter of gelijk aan 4
-
-
-print(5 <= 6)   # 5 is kleiner of gelijk aan 6
-
-
-print(6 != 7)   # 6 is niet gelijk aan 7
+boolean = 6 != 7   # 6 is niet gelijk aan 7
+print(boolean)
 
 
 # Ook strings kunnen gebruikt worden in Comparison operators
 
 een_string = "A"
-print('a' == een_string.lower())
+boolean = 'a' == een_string.lower()
+print(boolean)
 
 
 # #### Chained operators
@@ -48,17 +50,23 @@ print('a' == een_string.lower())
 # kan geschreven worden als  
 #     `1 < 2 < 3 <= 4`
 
-print(1 < 2 < 3)
+boolean = 1 < 2 < 3
+print(boolean)
 
-print(2 > 1 > 0)
+boolean = 2 > 1 > 0
+print(boolean)
 
-print(3 == 3 != 4)
+boolean = 3 == 3 != 4
+print(boolean)
 
-print(4 >= 3 <= 4)
+boolean = 4 >= 3 <= 4
+print(boolean)
 
-print(5 <= 5 <= 6)
+boolean = 5 <= 5 <= 6
+print(boolean)
 
-print(6 != 7 == 7)
+boolean = 6 != 7 == 7
+print(boolean)
 
 
 # ## Membership operator
@@ -72,14 +80,16 @@ woord = "Python"
 zin = "Test de membership van objecten met Python"
 
 # Test dat het woord voorkomt in de zin
-print(woord in zin)
+boolean = woord in zin
+print(boolean)
 
 
 nummer = 2
 tuple_met_cijfers = (1, nummer, 3)
 
 # Test dat nummer 2 voorkomt in de tuple met cijfers
-print(2 in tuple_met_cijfers)
+boolean = 2 in tuple_met_cijfers
+print(boolean)
 
 
 # ## Identity operator
@@ -99,11 +109,13 @@ print(2 in tuple_met_cijfers)
 # `None` is een singleton, wat betekend dat er maar één van is.
 
 verwijzing_naar_none = None
-print(verwijzing_naar_none is None)
+boolean = verwijzing_naar_none is None
+print(boolean)
 
 # Elke functie die geen `return` heeft, geeft None terug.
 result_print = print('dit is geprint')
-print(result_print is verwijzing_naar_none)
+boolean = result_print is verwijzing_naar_none
+print(boolean)
 
 # Voorbeeld dat None een singleton is, en dus naar hetzelfde adres verwijst.
 id_verwijzing_naar_none = id(verwijzing_naar_none)
@@ -112,7 +124,8 @@ id_result_print = id(result_print)
 print(id_verwijzing_naar_none)   # print uit de adressen van de variables
 print(id_result_print)
 
-print(id(verwijzing_naar_none) == id(result_print))
+boolean = id(verwijzing_naar_none) == id(result_print)
+print(boolean)
 
 
 # Python probeert zo efficient mogenlijk te zijn en verwijst eerder naar objecten dan dat er nieuwe wordt aangemaakt.
@@ -146,17 +159,21 @@ kleur_auto_2 = 'groen'
 
 
 # beide expressies moeten `True` hebben om `True` te krijgen
-print(kleur_auto_1 == 'rood' and kleur_auto_2 == 'groen')  # True
+boolean = kleur_auto_1 == 'rood' and kleur_auto_2 == 'groen'  # True
+print(boolean)
 
-print(kleur_auto_1 == 'rood' and kleur_auto_2 == 'paars')  # False
+boolean = kleur_auto_1 == 'rood' and kleur_auto_2 == 'paars'  # False
+print(boolean)
 
 # ### or
 # De `or` geeft aan dat een enkele expressies waar moet zijn om een `True` terug te krijgen.  
 # De expressie wordt `False` als alle expressies onwaar zijn.  
 
-print(kleur_auto_1 == 'oranje' or kleur_auto_2 == 'groen')  # True
+boolean = kleur_auto_1 == 'oranje' or kleur_auto_2 == 'groen'  # True
+print(boolean)
 
-print(kleur_auto_1 == 'oranje' or kleur_auto_2 == 'paars')  # True
+boolean = kleur_auto_1 == 'oranje' or kleur_auto_2 == 'paars'  # False
+print(boolean)
 
 
 # ### not
@@ -165,10 +182,12 @@ print(kleur_auto_1 == 'oranje' or kleur_auto_2 == 'paars')  # True
 
 bool_1 = kleur_auto_1 == 'oranje'  # False
 bool_2 = kleur_auto_2 == 'groen'  # True
-print(not bool_1 and bool_2 ) # True
+boolean = not bool_1 and bool_2  # True
+print(boolean)
 
 value = None
-print(value is not None)
+boolean = value is not None
+print(boolean)
 
 
 

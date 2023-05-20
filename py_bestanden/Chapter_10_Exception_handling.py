@@ -80,5 +80,5 @@ finally:
 # 
 # Maak een try-except met een `assert` statement die een error geeft.  
 # Laat de `assert` falen en print de error.
-# print 'finally' in het `finally` block
+# print 'finally' in het `finally` blok
 

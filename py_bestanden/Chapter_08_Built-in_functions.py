@@ -13,17 +13,26 @@ filter = "filter is geen functie meer"
 print(filter)
 
 
-# Als het niet anders kan dan een built-in te overschrijven dan nog is het mogenlijk om de orginele functie te gebruiken.  
+# Als het niet anders kan dan een built-in te overschrijven dan nog is het mogenlijk om de orginele functie te gebruiken.
 # Python heeft de module builtins.  
 # Deze module geeft een directe verwijzing naar alle built-ins van Python.  
 
+import sys
 import builtins
+
 
 print(print)  # hier is print nog niet overschreven.
 
 print = "print is overschreven"
 assert isinstance(print, str), "err: print zou een string moeten zijn"
 # geen error, dan is de functie print overschreven.
+
+# print kan niet meer worden bruikt
+try:
+    print('string is niet een object wat aangeroepen kan worden')
+except TypeError as err:
+    sys.stderr.write('%s\n' % err)
+    sys.stderr.flush()
 
 builtins.print(print)  # hier is print nog overschreven.
 
@@ -53,16 +62,17 @@ print(dir(str))
 
 local_var = None
 print(dir())
-'local_var' in dir()
+boolean = 'local_var' in dir()
+print(boolean)
 
 
 # ### type 
 # `type` verwacht een object als argument en geeft dan het type van het object terug.
 
 een_string = "dit is een string"
-type(een_string)
+print(type(een_string))
 
-type(print)
+print(type(print))
 
 
 # ### print
@@ -81,13 +91,13 @@ print('a', lijst, {'d': 'e'}, sep=' !! ', end='\n\n double newline \n\n')
 # Dit betekend dat range pas een nummer geeft als de code er om vraagt.  
 
 # range doet op zichzelf niks
-range(10)
+print(range(10))
 
 # maak een lijst met range van 0 tot 10
-list(range(10))
+print(list(range(10)))
 
 # maak een lijst met range van 1 tot 10 in stappen van 2
-list(range(1, 10, 2))
+print(list(range(1, 10, 2)))
 
 
 # ### open

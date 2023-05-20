@@ -47,7 +47,7 @@ print(int(hexadecimaal, 16))
 # Door het precisie element in kommagetallen kunnen er floatingpoint errors ontstaan.  
 
 # zou 0.9 moeten zijn
-0.3 + 0.3 + 0.3
+print(0.3 + 0.3 + 0.3)
 
 
 # `float` kan objecten die een getal representeren omzetten naar een kommagetal
@@ -82,6 +82,11 @@ print(0.618033 + 1)
 
 emoji_str = "\N{BLACK SUN WITH RAYS} zon en bloem ⚘"
 print(emoji_str)
+
+# En met de module unicodedata kan er namen van emoji's worden opgezocht
+
+import unicodedata
+print(unicodedata.name('☀'))
 
 # Zoals er bij `int` is laten zien kan een `str`  object worden omgezet naar `int`  
 # Vrijwel alles in Python kan omgezet worden naar `str`  

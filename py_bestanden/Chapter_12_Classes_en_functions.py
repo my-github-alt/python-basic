@@ -58,11 +58,14 @@ def is_het_weekend(dag):
         raise ValueError(f"gegeven dag ongeldig: {dag!r}")
 
 
-is_het_weekend('Woensdag')
+boolean = is_het_weekend('Woensdag')
+print(boolean)
 
-is_het_weekend('zaterdag')
+boolean = is_het_weekend('zaterdag')
+print(boolean)
 
-# is_het_weekend('gehaktdag')
+# boolean = is_het_weekend('gehaktdag')
+# print(boolean)
 
 
 # ## class

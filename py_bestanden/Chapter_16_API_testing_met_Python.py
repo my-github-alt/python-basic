@@ -90,18 +90,37 @@ print(res.text)
 
 # Voorbeeld van een unittest met pytest.
 
+from typing import Callable
 import pytest
 
 
-def keer_twee(nummer: int) -> int:
-    return int(nummer) * 2
+def keer(nummer: int) -> Callable[[int], int]:
+    def _func(other: int) -> int:
+        return int(nummer) * int(other)
 
-# # Uncomment de onderstaande functie om deze te testen
+    return _func
 
-# def test_dupliceer_2_en_1_is_6():
-#     given = keer_twee(2)  # 2 * 2 = 4
+
+# # Uncomment de onderstaande functies om deze te testen
+
+# def test_keer_twee():
+#     # given
+#     twee_keer = keer(2)
+#     # when
+#     result = twee_keer(2)
+#     # then
 #     expected = 4
-#     assert given == expected, f"Error {given = } {expected = }"
+#     assert result == expected
+#
+#
+# def test_keer_vier():
+#     # given
+#     vier_keer = keer(4)
+#     # when
+#     result = vier_keer(4)
+#     # then
+#     expected = 16
+#     assert result == expected
 
 
 pytest.main(['--verbosity=1'])
